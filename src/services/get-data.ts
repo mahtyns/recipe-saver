@@ -7,14 +7,13 @@ export async function fetchCollectionData<T extends DocumentData>(collectionName
         const querySnapshot = await getDocs(q);
 
         const data = querySnapshot.docs.map((docSnap: QueryDocumentSnapshot<DocumentData>) => {
-            // Cast the result of docSnap.data() to your expected generic type T
             const typedData = docSnap.data() as T;
             return {
                 id: docSnap.id,
-                ...typedData, // Spread the now-typed data
+                ...typedData, 
             };
         });
-        return data as (T & { id: string })[]; // Explicitly cast the final return type
+        return data as (T & { id: string })[]; 
     } catch (error) {
         console.error("Error fetching collection:", error);
         throw error;

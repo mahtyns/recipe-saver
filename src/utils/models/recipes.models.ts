@@ -1,6 +1,11 @@
+interface Ingredient {
+    name: string,
+    quantity: string
+}
+
 interface RecipeDocument {
     title: string,
-    ingredients: string[],
+    ingredients: Ingredient[],
     steps: string[]
 }
 
