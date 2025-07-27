@@ -1,5 +1,3 @@
-import styles from "./page.module.css";
-
 import { Recipe } from "@/utils/models/recipes.models";
 
 import { fetchCollectionData } from "@/services/get-data";
@@ -21,14 +19,14 @@ export default async function Home() {
   }
 
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <div>
+      <main>
         <h1> Recipes </h1>
         {recipes.map(recipe => 
           (<h2 key={recipe.id}>{recipe.title}</h2>)
         )}
       </main>
-      <footer className={styles.footer}>
+      <footer>
         
       </footer>
     </div>
