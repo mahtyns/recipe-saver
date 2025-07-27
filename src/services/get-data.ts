@@ -1,5 +1,5 @@
 import { collection, getDocs, DocumentData, QueryDocumentSnapshot } from 'firebase/firestore';
-import { db } from '@/app/lib/firebase/firebase';
+import { db } from '@/lib/firebase/firebase';
 
 export async function fetchCollectionData<T extends DocumentData>(collectionName: string): Promise<(T & { id: string })[]> {
     try {

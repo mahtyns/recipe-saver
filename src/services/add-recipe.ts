@@ -1,6 +1,6 @@
 import { collection, addDoc, Timestamp } from 'firebase/firestore';
 import { RecipeDocument } from '@/utils/models/recipes.models';
-import { db } from '@/app/lib/firebase/firebase';
+import { db } from '@/lib/firebase/firebase';
 
 interface NewRecipeData extends RecipeDocument {
     createdAt?: Timestamp; 
