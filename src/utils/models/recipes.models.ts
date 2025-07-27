@@ -1,9 +1,9 @@
-interface Ingredient {
+export interface Ingredient {
     name: string,
     quantity: string
 }
 
-interface RecipeDocument {
+export interface RecipeDocument {
     title: string,
     ingredients: Ingredient[],
     steps: string[]
