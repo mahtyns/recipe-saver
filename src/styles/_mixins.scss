@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@mixin md {
+    @media (min-width: #{$breakpoint-md}) {
+        @content
+    }
+}
+
+;
+
+@mixin xmd {
+    @media (min-width: #{$breakpoint-xmd}) {
+        @content
+    }
+}
+
+;
+
+@mixin lg {
+    @media (min-width: #{$breakpoint-lg}) {
+        @content;
+    }
+}
+
+;
+
+@mixin xl {
+    @media (min-width: #{$breakpoint-xl}) {
+        @content;
+    }
+}
+
+;
+
+//Font mixins
+@mixin font-base-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mixin font-base-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin font-base-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin font-special {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
