@@ -1,0 +1,21 @@
+.header {
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__nav-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    &__navlist {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none
+    }
+}
