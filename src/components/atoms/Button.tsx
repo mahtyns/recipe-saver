@@ -1,14 +1,15 @@
 interface ButtonProps {
-    handleClick: () => void,
-    buttonText: string,
-    buttonType: 'primary' | 'secondary' | 'outline' | 'danger'
+  handleClick: () => void,
+  buttonText: string,
+  buttonClass: 'primary' | 'secondary' | 'outline' | 'danger',
+  buttonType?: 'button' | 'submit' | 'reset';
 }
 
 const Button = (props: ButtonProps) => {
-  const buttonClass = `button button--${props.buttonType}`
+  const buttonClass = `button button--${props.buttonClass}`
 
   return (
-    <button className={buttonClass} onClick={()=>props.handleClick()}>{props.buttonText}</button>
+    <button className={buttonClass} onClick={() => props.handleClick()} type={props.buttonType}>{props.buttonText}</button>
   )
 }
 

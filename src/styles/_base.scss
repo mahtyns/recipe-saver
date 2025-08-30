@@ -24,7 +24,24 @@ body {
 }
 
 .button {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+
     &--primary {
         background-color: $green-dark;
+        color: $main-white;
+    }
+
+    &--secondary {
+        background-color: $blue-light;
+        color: $main-dark;
+    }
+
+    &--outline {
+        background-color: transparent;
+        color: $main-dark;
+        border: solid 1px $green-dark;
     }
 }
