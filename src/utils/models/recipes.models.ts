@@ -5,7 +5,7 @@ export interface Ingredient {
 
 export interface RecipeDocument {
     title: string,
-    // ingredients: Ingredient[],
+    ingredients: Ingredient[],
     // steps: string[]
 }
 

@@ -8,7 +8,7 @@ interface FormProps {
     required?: boolean,
     inputPlaceholder: string,
     inputOnchange?: (event: React.ChangeEvent<HTMLInputElement>) => void,
-    inputValue: string
+    inputValue?: string
 }
 
 export const FormInput = (props: FormProps) => {
