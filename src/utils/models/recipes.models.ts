@@ -5,10 +5,10 @@ export interface Ingredient {
 
 export interface RecipeDocument {
     title: string,
-    ingredients: Ingredient[],
-    steps: string[]
+    // ingredients: Ingredient[],
+    // steps: string[]
 }
 
 export interface Recipe extends RecipeDocument {
-    id: string; 
+    id: string;
 }

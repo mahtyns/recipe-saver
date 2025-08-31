@@ -16,9 +16,9 @@ export const AddNewRecipe = () => {
 
     return (
         <div className={mainClass}>
-            <form className="new-recipe__container">
+            <form className="new-recipe__container" onSubmit={handleSubmit}>
                 <FormInput formLabel="Recipe name" inputId="recipe-name" mainClass={mainClass} inputType="text" inputPlaceholder={'Add new recipe name here'} inputValue={recipeName} inputOnchange={handleNameChange} />
-                <Button buttonText='Add new recipe' buttonClass='primary' handleClick={() => handleSubmit} buttonType="submit" />
+                <Button buttonText='Add new recipe' buttonClass='primary' buttonType="submit" />
             </form>
         </div>
     )
