@@ -2,4 +2,7 @@
 
 .main-panel {
     @include border-rounded;
+     @include breakpoint-md {
+        flex-basis: 70%;
+    }
 }

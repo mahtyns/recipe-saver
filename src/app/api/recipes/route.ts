@@ -3,7 +3,7 @@ import { db } from "@/app/lib/db";
 
 export async function GET(request: NextRequest) {
 
-    let query = "SELECT * FROM recipes";
+    const query = "SELECT * FROM recipes";
 
     try {
         const result = await db.query(query);

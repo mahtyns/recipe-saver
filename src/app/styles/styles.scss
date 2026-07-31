@@ -1,3 +1,19 @@
 @import './general/styles.scss';
 
-@import './components/styles.scss'
+@import './components/styles.scss';
+
+@import './utils/styles.scss';
+
+
+section {
+    margin: 0 auto;
+    @include breakpoint-md {
+        max-width: 1100px;
+    }
+    @include breakpoint-lg {
+        max-width: 1400px;
+    }
+    @include breakpoint-xl {
+        max-width: 1600px
+    }
+}

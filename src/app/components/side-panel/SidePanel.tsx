@@ -1,5 +1,9 @@
-export const SidePanel = () => {
+interface Props {
+    mainClass: string,
+}
+
+export const SidePanel = (props: Props) => {
     return (
-        <div>SidePanel</div>
+        <div className={`${props.mainClass} side-panel`}>SidePanel</div>
     )
 }

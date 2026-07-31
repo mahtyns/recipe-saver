@@ -3,7 +3,7 @@ import { Recipe } from "../models/ingredients/recipes.models";
 
 import { useQuery } from "@tanstack/react-query";
 
-export const useGetRecipes = async (): Promise<object> => {
+export const useGetRecipes = () => {
 
     const { isPending, error, data } = useQuery<Recipe[]>(
         {
@@ -12,12 +12,16 @@ export const useGetRecipes = async (): Promise<object> => {
                 const response = await fetch(RECIPES_API)
 
                 if (!response.ok) {
-                    throw new Error("Failed to fetch ingredients");
+                    throw new Error("Failed to fetch recipes");
                 }
 
                 return response.json();
             }
         }
     )
-    return { isPending, error, data }
+    return {
+        error,
+        isPending,
+        data
+    }
 }
