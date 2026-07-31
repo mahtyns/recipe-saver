@@ -1,0 +1,12 @@
+@import '../../utils/styles.scss';
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+
+    @include breakpoint-md {
+        flex-direction: row;
+        gap: $space-xl;
+    }
+}

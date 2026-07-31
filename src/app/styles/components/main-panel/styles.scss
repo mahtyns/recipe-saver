@@ -1,0 +1,5 @@
+@import '../../utils/styles.scss';
+
+.main-panel {
+    @include border-rounded;
+}
