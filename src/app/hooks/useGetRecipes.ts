@@ -1,5 +1,5 @@
 import { RECIPES_API } from "../utils/databases";
-import { Recipe } from "../models/ingredients/recipes.models";
+import { Recipe } from "../models/recipes/recipes.models";
 
 import { useQuery } from "@tanstack/react-query";
 

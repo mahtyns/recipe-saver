@@ -4,15 +4,26 @@
 
 @import './utils/styles.scss';
 
+* {
+    font-family: $font-primary;
+}
+
+body {
+    background-color: $color-background-main;
+    color: $color-text-main;
+}
 
 section {
     margin: 0 auto;
+
     @include breakpoint-md {
         max-width: 1100px;
     }
+
     @include breakpoint-lg {
         max-width: 1400px;
     }
+
     @include breakpoint-xl {
         max-width: 1600px
     }

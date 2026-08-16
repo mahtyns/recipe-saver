@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "recipe_id": 1,
+        "ingredient_id": 3,
+        "quantity": 2,
+        "unit": "slices"
+    },
+    {
+        "id": 2,
+        "recipe_id": 1,
+        "ingredient_id": 4,
+        "quantity": 120,
+        "unit": "g"
+    },
+    {
+        "id": 3,
+        "recipe_id": 1,
+        "ingredient_id": 5,
+        "quantity": 20,
+        "unit": "g"
+    },
+    {
+        "id": 4,
+        "recipe_id": 2,
+        "ingredient_id": 7,
+        "quantity": 1,
+        "unit": "tablespoon"
+    },
+    {
+        "id": 5,
+        "recipe_id": 2,
+        "ingredient_id": 8,
+        "quantity": 125,
+        "unit": "g"
+    },
+    {
+        "id": 6,
+        "recipe_id": 2,
+        "ingredient_id": 9,
+        "quantity": 180,
+        "unit": "g"
+    },
+    {
+        "id": 7,
+        "recipe_id": 2,
+        "ingredient_id": 10,
+        "quantity": 150,
+        "unit": "g"
+    }
+]

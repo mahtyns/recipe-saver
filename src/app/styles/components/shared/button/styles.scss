@@ -1,0 +1,14 @@
+@import '../../../utils/styles.scss';
+
+.button {
+    border: none;
+    font-size: $font-base;
+    font-weight: $font-bold;
+    padding: $space-md $space-lg;
+    border-radius: $space-md;
+
+    &--primary {
+        background-color: $color-accent-main;
+        color: $color-background-main;
+    }
+}

@@ -1,0 +1,74 @@
+@import '../../utils/styles.scss';
+
+.header {
+    padding: $space-md $space-lg;
+
+    @include breakpoint-md {
+        padding: $space-lg $space-xxl;
+    }
+
+    &__wrapper {
+        border-bottom: $color-muted solid $line-sm;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: $space-md;
+
+        @include breakpoint-md {
+            padding-bottom: $space-lg;
+        }
+    }
+
+    &__logo {
+        font-family: $font-accent;
+        font-size: $font-lg;
+        font-weight: $font-regular;
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+        gap: $space-md;
+        align-items: center;
+
+        @include breakpoint-md {
+            gap: $space-xl;
+        }
+
+        &__list {
+            display: none;
+
+            @include breakpoint-md {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                gap: $space-lg;
+                align-items: center;
+            }
+        }
+
+        &__item a {
+            text-decoration: none;
+            color: $color-text-lighter;
+            font-weight: $font-bold;
+        }
+    }
+
+    .button {
+        @include plus-icon;
+    }
+
+    &__burger {
+        border: none;
+        background-color: transparent;
+
+        img {
+            width: $icon-lg;
+            height: $icon-lg;
+        }
+
+        @include breakpoint-md {
+            display: none;
+        }
+    }
+}

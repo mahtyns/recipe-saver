@@ -38,3 +38,22 @@
     border: solid $space-min rgba($color: white, $alpha: 0.2);
     border-radius: $space-md;
 }
+
+// Icons
+@mixin plus-icon {
+    position: relative;
+    padding-left: $space-xxl;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: $icon-sm;
+        height: $icon-sm;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: $space-md;
+        background: url(/assets/images/ui/plus.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
