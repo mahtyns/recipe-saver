@@ -3,6 +3,7 @@
 import Title from "../shared/titles/Title"
 import { useGetRecipes } from "@/app/hooks/useGetRecipes"
 import { RecipeCard } from "../recipes/recipes-card/RecipeCard"
+import { IngredientList } from "../ingredients/ingredient-list/IngredientList";
 interface Props {
     mainClass: string,
 }

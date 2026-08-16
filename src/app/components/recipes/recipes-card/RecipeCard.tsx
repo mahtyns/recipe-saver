@@ -1,4 +1,4 @@
-import { Recipe } from "@/app/models/ingredients/recipes.models"
+import { Recipe } from "@/app/models/recipes/recipes.models"
 import Title from "../../shared/titles/Title"
 
 export const RecipeCard = (props: Recipe) => {

@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "name": "Curd Cheese & Fig Jam Toast",
+        "description": "Fast and easy, integral toast with semi-fat curd cheese and fig jam",
+        "steps": "1. Toast the bread. 2. Cut the curd cheese and place on the toast. 3. Top with fig jam.",
+        "labels": [
+            "Breakfast",
+            "Vegetarian"
+        ],
+        "cooking_time": 5
+    },
+    {
+        "id": 2,
+        "name": "Kaka salad",
+        "description": "With fresh vegetables, easy and healthy",
+        "steps": "1. Cut all the vegetables. 2. Add hummus. 3. Mix everything and serve.",
+        "labels": [
+            "Vegan",
+            "Vegetarian",
+            "Healthy"
+        ],
+        "cooking_time": 5
+    }
+]

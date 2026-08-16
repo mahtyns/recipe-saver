@@ -1,24 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
-import { db } from "@/app/lib/db";
+import { getRepository } from "@/app/lib/data";
 
 export async function GET(request: NextRequest) {
-
-    const query = "SELECT * FROM recipes";
-
     try {
-        const result = await db.query(query);
-
-        return NextResponse.json(result.rows);
-    }
-    catch (error) {
+        const repo = getRepository();
+        const recipes = await repo.getRecipes();
+        return NextResponse.json(recipes);
+    } catch (error) {
         return NextResponse.json(
             {
                 message: "Database error",
                 error: error instanceof Error ? error.message : String(error),
             },
-            {
-                status: 500
-            }
-        )
+            { status: 500 }
+        );
     }
 }
