@@ -1,5 +1,7 @@
 import { constants } from '../constants'
 
+const year = new Date().getFullYear();
+
 export const siteContent = {
     navbar: {
         logo: constants.siteName,
@@ -26,5 +28,45 @@ export const siteContent = {
                 linkUrl: ""
             },
         ]
+    },
+    footer: {
+        logo: constants.siteName,
+        copyright: `Designed and developed by Martyna Smolarek © ${year}`,
+        links: {
+            title: "Quick links",
+            blocks: [
+                {
+                    title: "Page links",
+                    links: [
+                        {
+                            linkName: "Your recipes",
+                            linkUrl: ""
+                        },
+                        {
+                            linkName: "Ingredient list",
+                            linkUrl: ""
+                        },
+                        {
+                            linkName: "Your pantry",
+                            linkUrl: ""
+                        },
+                        {
+                            linkName: "About",
+                            linkUrl: ""
+                        },
+                    ]
+                },
+                {
+                    title: "Account",
+                    links: [
+                        {
+                            linkName: "Your account",
+                            linkUrl: ""
+                        }
+                    ]
+                }
+            ]
+        }
+
     }
 }

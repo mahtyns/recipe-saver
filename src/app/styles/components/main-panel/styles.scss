@@ -1,8 +1,12 @@
 @import '../../utils/styles.scss';
 
 .main-panel {
+    background-color: $color-background-main;
+    padding: $space-lg;
     @include border-rounded;
-     @include breakpoint-md {
+
+    @include breakpoint-md {
         flex-basis: 70%;
+        padding: $space-xl;
     }
 }

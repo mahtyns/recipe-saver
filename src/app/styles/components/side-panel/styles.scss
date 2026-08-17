@@ -1,8 +1,11 @@
 .side-panel {
         @include border-rounded;
+        background-color: $color-background-main;
+        padding: $space-lg;
 
         @include breakpoint-md {
-        flex-basis: 30%;
-        width: 100%;
+                flex-basis: 30%;
+                width: 100%;
+                padding: $space-xl;
         }
 }

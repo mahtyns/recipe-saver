@@ -12,6 +12,8 @@
     @include breakpoint-md {
         flex-direction: row;
         gap: $space-xl;
+        align-items: flex-start;
+        min-height: 70vh;
     }
 
 }

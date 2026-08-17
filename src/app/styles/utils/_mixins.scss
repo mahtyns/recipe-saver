@@ -35,7 +35,8 @@
 
 // Styles
 @mixin border-rounded {
-    border: solid $space-min rgba($color: white, $alpha: 0.2);
+    border: solid $space-min rgba($color: $color-secondary, $alpha: 0.2);
+    box-shadow: 0 0 $space-lg rgba($color: $color-muted, $alpha: 0.15);
     border-radius: $space-md;
 }
 
