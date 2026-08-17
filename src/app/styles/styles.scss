@@ -11,6 +11,14 @@ body {
     color: $color-text-main;
 }
 
+main {
+    padding: $space-md $space-lg;
+
+    @include breakpoint-md {
+        padding: $space-lg $space-xxl;
+    }
+}
+
 section {
     margin: 0 auto;
 

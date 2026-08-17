@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "label": "Breakfast"
+    },
+    {
+        "id": 2,
+        "label": "Vegetarian"
+    },
+    {
+        "id": 3,
+        "label": "Vegan"
+    },
+    {
+        "id": 4,
+        "label": "Healthy"
+    },
+    {
+        "id": 5,
+        "label": "Protein"
+    },
+    {
+        "id": 6,
+        "label": "Lunch"
+    },
+    {
+        "id": 7,
+        "label": "Dinner"
+    },
+    {
+        "id": 8,
+        "label": "Salad"
+    },
+    {
+        "id": 9,
+        "label": "Sweet"
+    }
+]

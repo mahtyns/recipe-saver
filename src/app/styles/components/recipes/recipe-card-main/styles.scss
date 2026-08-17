@@ -1,0 +1,22 @@
+.recipe-card {
+    display: flex;
+    justify-content: space-between;
+    padding: $space-md 0;
+    border-bottom: solid $space-min rgba($color: $color-muted, $alpha: 0.2);
+    gap: $space-lg;
+    align-items: center;
+
+    &__labels {
+        display: flex;
+        gap: $space-md;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    &__label {
+        background-color: $color-accent-secondary;
+        color: $color-muted;
+        padding: $space-sm;
+        border-radius: $space-sm;
+    }
+}

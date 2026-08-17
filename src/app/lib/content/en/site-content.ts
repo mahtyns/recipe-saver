@@ -29,6 +29,9 @@ export const siteContent = {
             },
         ]
     },
+    recipes: {
+        button: "See recipe",
+    },
     footer: {
         logo: constants.siteName,
         copyright: `Designed and developed by Martyna Smolarek © ${year}`,

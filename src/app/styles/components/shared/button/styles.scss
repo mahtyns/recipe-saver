@@ -6,9 +6,15 @@
     font-weight: $font-bold;
     padding: $space-md $space-lg;
     border-radius: $space-md;
+    cursor: pointer;
 
     &--primary {
         background-color: $color-accent-main;
+        color: $color-background-main;
+    }
+
+    &--secondary {
+        background-color: $color-secondary;
         color: $color-background-main;
     }
 }

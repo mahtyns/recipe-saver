@@ -1,11 +1,11 @@
 import { RECIPES_API } from "../utils/databases";
-import { Recipe } from "../models/recipes/recipes.models";
+import { Recipe, RecipeWithLabels } from "../models/recipes/recipes.models";
 
 import { useQuery } from "@tanstack/react-query";
 
 export const useGetRecipes = () => {
 
-    const { isPending, error, data } = useQuery<Recipe[]>(
+    const { isPending, error, data } = useQuery<RecipeWithLabels[]>(
         {
             queryKey: ['recipes'],
             queryFn: async () => {
