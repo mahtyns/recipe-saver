@@ -8,20 +8,21 @@ export interface LabelColor {
 }
 
 export const labelColors: Record<string, LabelColor> = {
-    Breakfast: { text: "#f9d3f8", background: "#1b4e39" },
-    Vegetarian: { text: "#ddf2b9", background: "#3a9e99" },
-    Vegan: { text: "#4ca98e", background: "#f8ddf7" },
-    Healthy: { text: "#038072", background: "#ffd596" },
-    Protein: { text: "#f49625", background: "#fddbb0" },
-    Lunch: { text: "#afced0", background: "#252c47" },
-    Dinner: { text: "#f06546", background: "#d8fabb" },
-    Salad: { text: "#dff2bc", background: "#422f0f" },
-    Sweet: { text: "#fec4c2", background: "#e44f2f" },
+    Breakfast: { text: "#6C5160", background: "#FFDEF2" },
+    Vegetarian: { text: "#F1F8E8", background: "#466D12" },
+    Vegan: { text: "#327321", background: "#E0FDD8" },
+    Healthy: { text: "#DBFFEB", background: "#144D3F" },
+    Protein: { text: "#FFF5F5", background: "#7C2E04" },
+    Lunch: { text: "#FBEBFF", background: "#495B6F" },
+    Dinner: { text: "4E3C53", background: "#D5D0F5" },
+    Salad: { text: "#FBEBFF", background: "#AC0C2C" },
+    Sweet: { text: "#FFFFFF", background: "#B81E70" },
+    Beans: { text: "#350B03", background: "#DC7704" },
 };
 
 export const defaultLabelColor: LabelColor = {
-    text: "#333333",
-    background: "#EAEAEA",
+    text: "#FFFFFF",
+    background: "#6B665B",
 };
 
 export function getLabelColor(label: string): LabelColor {
