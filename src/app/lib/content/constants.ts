@@ -1,5 +1,7 @@
 export const constants = {
-    siteName: "Chives"
+    siteName: "Chives",
+    filterByTypeSlug: "filter-type",
+    filterByTimeSlug: "filter-time"
 }
 
 export interface LabelColor {

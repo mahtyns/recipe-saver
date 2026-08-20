@@ -54,5 +54,27 @@
                 flex-direction: column;
                 gap: $space-md;
                 margin-bottom: $space-lg;
+
+                a,
+                a:visited {
+                        text-decoration: none;
+                        color: $color-muted;
+                        transition: all 2s ease-in;
+                }
+
+                a:hover {
+                        color: $color-secondary;
+                        text-decoration: underline;
+                }
+        }
+
+        &__filters {
+                display: flex;
+                flex-direction: column;
+                gap: $space-sm;
+
+                &--title {
+                        font-family: $font-accent;
+                }
         }
 }

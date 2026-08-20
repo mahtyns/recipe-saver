@@ -1,3 +1,4 @@
+import { name } from 'next/dist/server/ci-info';
 import { constants } from '../constants'
 
 const year = new Date().getFullYear();
@@ -9,24 +10,72 @@ export const siteContent = {
         navigation: [
             {
                 linkName: "Recipes",
-                linkUrl: ""
-            },
-            {
-                linkName: "Ingredient List",
-                linkUrl: ""
+                linkUrl: "/"
             },
             {
                 linkName: "Your pantry",
-                linkUrl: ""
+                linkUrl: "/pantry/"
             },
             {
-                linkName: "Account",
-                linkUrl: ""
+                linkName: "Planner",
+                linkUrl: "/planner/"
             },
             {
-                linkName: "About",
-                linkUrl: ""
+                linkName: "Shopping List",
+                linkUrl: "/shopping-list/"
             },
+            {
+                linkName: "Ingredient List",
+                linkUrl: "/ingredients/"
+            },
+        ]
+    },
+    sidePanel: {
+        topbar: "Hi there!",
+        topbarExtra: "What are we cooking today?",
+        logo: constants.siteName,
+        footer: "Keep your recipes & pantry organised.",
+        sectionNames: [
+            {
+                name: "Browse",
+                slug: "browse"
+            },
+            {
+                name: "Filter",
+                slug: "filter"
+            },
+            {
+                name: "Search by ingredient",
+                slug: "search-by-ingredient"
+            }
+        ],
+        links: [
+            {
+                linkName: "Your recipes",
+                linkUrl: "/"
+            },
+            {
+                linkName: "Planner",
+                linkUrl: "/"
+            },
+            {
+                linkName: "Your pantry",
+                linkUrl: "/"
+            },
+            {
+                linkName: "Your shopping list",
+                linkUrl: "/"
+            }
+        ],
+        filterOptions: [
+            {
+                name: "Filter by type",
+                slug: constants.filterByTypeSlug
+            },
+            {
+                name: "Filter by time",
+                slug: constants.filterByTimeSlug
+            }
         ]
     },
     recipes: {
@@ -43,19 +92,27 @@ export const siteContent = {
                     links: [
                         {
                             linkName: "Your recipes",
-                            linkUrl: ""
+                            linkUrl: "/"
+                        },
+                        {
+                            linkName: "Recipe planner",
+                            linkUrl: "/planner/"
                         },
                         {
                             linkName: "Ingredient list",
-                            linkUrl: ""
+                            linkUrl: "/ingredients/"
                         },
                         {
                             linkName: "Your pantry",
-                            linkUrl: ""
+                            linkUrl: "/pantry/"
+                        },
+                        {
+                            linkName: "Your shopping lists",
+                            linkUrl: "/shopping-list/"
                         },
                         {
                             linkName: "About",
-                            linkUrl: ""
+                            linkUrl: "/about-us/"
                         },
                     ]
                 },

@@ -2,6 +2,7 @@ import { db } from "@/app/lib/db";
 import type { DataRepository } from "@/app/lib/data/repository";
 import type { Ingredient } from "@/app/models/ingredients/ingredients.models";
 import type { RecipeWithLabels, RecipeWithIngredients } from "@/app/models/recipes/recipes.models";
+import type { Label } from "@/app/models/labels/labels.models"
 
 export const postgresRepository: DataRepository = {
     async getIngredients(): Promise<Ingredient[]> {
@@ -82,4 +83,10 @@ export const postgresRepository: DataRepository = {
 
         return { ...recipe, ingredients };
     },
+
+    async getLabels(): Promise<Label[]> {
+        const result = await db.query("SELECT * FROM labels ORDER BY label");
+        return result.rows;
+    },
 };
+

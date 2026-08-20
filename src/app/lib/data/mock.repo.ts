@@ -48,4 +48,8 @@ export const mockRepository: DataRepository = {
             ingredients: recipeIngredients,
         };
     },
+
+    async getLabels(): Promise<Label[]> {
+        return labels as Label[];
+    },
 };

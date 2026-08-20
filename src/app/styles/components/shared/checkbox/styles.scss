@@ -1,0 +1,16 @@
+.checkbox {
+    &-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: $space-md;
+
+        &__item {
+            display: flex;
+            gap: $space-xs;
+            flex-basis: 30%;
+            color: $color-muted;
+            font-size: $font-xs;
+        }
+    }
+}
