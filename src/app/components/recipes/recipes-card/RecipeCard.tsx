@@ -9,6 +9,7 @@ const mainClass = "recipe-card"
 export const RecipeCard = (props: RecipeWithLabels) => {
     return (
         <div className="recipe-card">
+            <img src={props.image_url} alt={props.name + " recipe image"} className="recipe-card__image" />
             <Title isH1={false} title={props.name} mainClass={mainClass} />
             <div className="recipe-card__labels">
                 {props.labels.map(label => <Label label={label} key={label} mainClass={mainClass} />)}

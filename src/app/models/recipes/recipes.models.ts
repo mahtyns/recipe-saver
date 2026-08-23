@@ -6,7 +6,7 @@ export interface Recipe {
     description: string,
     steps: string,
     cooking_time: number,
-    image_url: string | null
+    image_url?: string
 }
 
 export interface RecipeWithLabels extends Recipe {

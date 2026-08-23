@@ -20,4 +20,9 @@
         border-radius: $space-sm;
         font-weight: $font-bold;
     }
+
+    &__image {
+        max-width: $image-xl;
+        border-radius: $space-md;
+    }
 }

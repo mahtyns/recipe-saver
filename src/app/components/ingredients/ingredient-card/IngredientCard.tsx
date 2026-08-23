@@ -10,7 +10,6 @@ export const IngredientCard = (props: IngredientCardProps) => {
         <div className={`${props.mainClass}__card`}>
             <div>{props.ingredient.category}</div>
             <h3>{props.ingredient.name}</h3>
-            <div>{props.ingredient.quantity}</div>
             <div>
                 <p>Nutritional value (100g):</p>
                 <ul>
