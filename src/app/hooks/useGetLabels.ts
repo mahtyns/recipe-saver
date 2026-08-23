@@ -1,12 +1,11 @@
-// src/app/hooks/useGetLabels.ts  (adjust path to match useGetRecipes.ts location)
 import { LABELS_API } from "../utils/databases";
-import { Label } from "../models/labels/labels.models";
+import { LabelData } from "../models/labels/labels.models";
 
 import { useQuery } from "@tanstack/react-query";
 
 export const useGetLabels = () => {
 
-    const { isPending, error, data } = useQuery<Label[]>(
+    const { isPending, error, data } = useQuery<LabelData[]>(
         {
             queryKey: ['labels'],
             queryFn: async () => {

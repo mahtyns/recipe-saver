@@ -4,6 +4,7 @@ interface InputProps {
     type: string,
     required: boolean,
     id: string,
+    handleOnChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 export const Input = (props: InputProps) => {
@@ -12,7 +13,7 @@ export const Input = (props: InputProps) => {
             <label className="form__label">
                 {props.label}
             </label>
-            <input id={props.id} placeholder={props.placeholder} required={props.required} type={props.type} value={ } onChange={ } />
+            <input id={props.id} placeholder={props.placeholder} required={props.required} type={props.type} onChange={props.handleOnChange} />
         </div>
     )
 }
