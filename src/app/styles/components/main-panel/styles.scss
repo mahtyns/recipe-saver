@@ -8,5 +8,6 @@
     @include breakpoint-md {
         flex-basis: 70%;
         padding: $space-xl;
+        min-height: stretch;
     }
 }

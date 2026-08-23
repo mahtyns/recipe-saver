@@ -22,7 +22,7 @@ export const IngredientList = (props: IngredientListProps) => {
         <section className={`${props.mainClass}`}>
             <Title mainClass={props.mainClass} isH1={true} title={ingredientsPageContent.h1Title} />
             <div className={`${props.mainClass}__wrapper`}>
-                <h2>Available ingredients:</h2>
+                <Title mainClass={props.mainClass} isH1={false} title={ingredientsPageContent.available} />
                 <ListContent isPending={isPending} error={error} data={ingredients} renderItem={renderItem} mainClass={props.mainClass} />
             </div>
         </section>

@@ -1,0 +1,15 @@
+.labels {
+    &__label {
+        background-color: $color-accent-secondary;
+        color: $color-muted;
+        padding: $space-sm;
+        border-radius: $space-sm;
+        font-weight: $font-bold;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space-sm;
+    }
+}

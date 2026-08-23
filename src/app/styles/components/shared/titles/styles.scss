@@ -16,5 +16,6 @@
 
     @include breakpoint-md {
         font-size: $font-lg;
+        margin-bottom: $space-md;
     }
 }

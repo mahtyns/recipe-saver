@@ -11,10 +11,10 @@ const Title = (props: TitleProps) => {
     <>
       {
         props.isH1 ?
-          <h1 className={`title-h1 {mainClass}__title`}>
+          <h1 className={`title-h1 ${props.mainClass}__title`}>
             {props.title}
           </h1> :
-          <h2 className={`title-h2 {mainClass}__title`}>
+          <h2 className={`title-h2 ${props.mainClass}__title`}>
             {props.title}
           </h2>
       }

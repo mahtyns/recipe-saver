@@ -6,6 +6,7 @@ import { constants } from "@/app/lib/content/constants"
 import { useGetLabels } from "@/app/hooks/useGetLabels";
 import type { FilterOption } from "@/app/models/filters/filters.models"
 import { timeFilters } from "@/app/lib/helpers/filters/time-filters";
+import { Input } from "../shared/input/Input";
 
 interface Props {
     mainClass: string,
@@ -75,6 +76,7 @@ export const SidePanel = (props: Props) => {
                     {siteContent.sidePanel.sectionNames[2].name}
                 </div>
                 <div className={`side-panel__section-content`}>
+                    <Input />
                 </div>
             </div>
             <div className={`side-panel__footer`} >

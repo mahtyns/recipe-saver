@@ -56,16 +56,20 @@ export const siteContent = {
             },
             {
                 linkName: "Planner",
-                linkUrl: "/"
+                linkUrl: "/planner/"
             },
             {
                 linkName: "Your pantry",
-                linkUrl: "/"
+                linkUrl: "/pantry/"
             },
             {
                 linkName: "Your shopping list",
-                linkUrl: "/"
-            }
+                linkUrl: "/shopping-list/"
+            },
+            {
+                linkName: "Manage labels",
+                linkUrl: "/labels/"
+            },
         ],
         filterOptions: [
             {

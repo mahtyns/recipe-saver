@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 import { Loading } from "../../status-components/Loading";
 import { Error } from "../../status-components/Error";
-import { RecipeWithLabels } from "@/app/models/recipes/recipes.models";
 
 interface ListContentProps<T> {
     isPending: boolean,

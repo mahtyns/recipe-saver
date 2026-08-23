@@ -1,10 +1,18 @@
+interface InputProps {
+    label: string,
+    placeholder: string,
+    type: string,
+    required: boolean,
+    id: string,
+}
 
-export const Input = () => {
+export const Input = (props: InputProps) => {
     return (
-        <div>
-            <label>
+        <div className="form__input">
+            <label className="form__label">
+                {props.label}
             </label>
-            <input placeholder="Search by..." />
+            <input id={props.id} placeholder={props.placeholder} required={props.required} type={props.type} value={ } onChange={ } />
         </div>
     )
 }

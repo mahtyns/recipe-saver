@@ -2,7 +2,7 @@ import { IngredientList } from "../components/ingredients/ingredient-list/Ingred
 import { MainContainer } from "../layouts/components/MainContainer";
 import { INGREDIENTS_CLASS } from "@/app/lib/content/classes.constants"
 
-export default function Home() {
+export default function Ingredients() {
     return (
         <div>
             <main>
