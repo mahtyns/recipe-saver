@@ -6,6 +6,7 @@ import { ListContent } from "../../shared/list-content/ListContent";
 import Title from "../../shared/titles/Title";
 import { RecipeCard } from "@/app/components/recipes/recipes-card/RecipeCard"
 import { RecipeWithLabels } from "@/app/models/recipes/recipes.models";
+import { Button } from "../../shared/button/Button";
 
 export const RecipeList = () => {
     const { isPending, error, data: recipes } = useGetRecipes()
@@ -14,7 +15,10 @@ export const RecipeList = () => {
 
     return (
         <div className={`${RECIPES_CLASS}__wrapper`}>
-            <Title isH1={true} title="Browse your recipes" mainClass={RECIPES_CLASS} />
+            <div className={`${RECIPES_CLASS}__topbar`}>
+                <Title isH1={true} title="Browse your recipes" mainClass={RECIPES_CLASS} />
+                <Button variant="primary" text="Add new" handleClick={() => window.location.assign('/new-recipe/')} />
+            </div>
             <div className="">
                 <ListContent isPending={isPending} error={error} data={recipes} mainClass={RECIPES_CLASS} renderItem={renderItem} />
             </div>

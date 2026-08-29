@@ -1,0 +1,27 @@
+.form {
+    &__input {
+        display: flex;
+        flex-direction: column;
+        gap: $space-sm;
+        margin-bottom: $space-md;
+
+        input {
+            height: $space-xl;
+            border-radius: $space-md;
+            border: $color-muted solid $space-min;
+            width: 100%;
+            background-color: rgba($color: $color-background-secondary, $alpha: 0.2);
+            box-shadow: 0 0 $space-sm rgba($color: $color-muted, $alpha: 0.2);
+            padding: 0 $space-sm;
+
+            &::placeholder {
+                font-size: $font-base;
+            }
+        }
+
+        label {
+            font-family: $font-accent;
+            font-size: $font-md;
+        }
+    }
+}

@@ -14,7 +14,7 @@ export const Header = () => {
                             siteContent.navbar.navigation.map(item => <li className="header__navigation__item" key={item.linkName}><a href={item.linkUrl}>{item.linkName}</a></li>)
                         }
                     </ul>
-                    <Button text={siteContent.navbar.button} variant={'primary'} handleClick={() => null} />
+                    <Button text={siteContent.navbar.button} variant={'primary'} handleClick={() => window.location.assign('/new-recipe/')} />
                     <button className="header__burger"><img src={'/assets/images/ui/menu.png'} /></button>
                 </div>
             </div>

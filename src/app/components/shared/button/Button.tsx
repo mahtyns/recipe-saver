@@ -1,7 +1,8 @@
 interface ButtonProps {
     text: string,
     variant: 'primary' | 'secondary' | 'warning' | 'underline'
-    handleClick: () => void | null;
+    handleClick?: () => void | null;
+    type?: 'submit'
 }
 
 const variantClasses: Record<ButtonProps['variant'], string> = {
@@ -16,6 +17,7 @@ export const Button = (props: ButtonProps) => {
         <button
             className={`button ${variantClasses[props.variant]}`}
             onClick={props.handleClick}
+            type={props.type}
         >
             {props.text}
         </button>

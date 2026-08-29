@@ -12,4 +12,20 @@
         flex-wrap: wrap;
         gap: $space-sm;
     }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: $space-md;
+
+        .form__input {
+            width: 80%;
+            margin-bottom: 0;
+        }
+
+        button {
+            height: fit-content;
+        }
+    }
 }

@@ -1,7 +1,7 @@
 import { MainContainer } from "@/app/layouts/components/MainContainer";
 
 
-const mainClass = "about.us"
+const mainClass = "about-us"
 
 export default function Home() {
     return (
